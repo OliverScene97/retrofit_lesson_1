@@ -36,6 +36,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
 }
 
@@ -46,6 +47,10 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation (libs.retrofit)
+    implementation (libs.squareup.logging.interceptor)
+    implementation (libs.okhttp)
+    implementation (libs.picasso)
+
     implementation (libs.converter.gson)
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
